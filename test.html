@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function getRandom() {
+    //     return Math.floor(Math.random()*90 + 10)
+    // }
+    // const arr = []
+    // for (let i = 0; i < 10; i++) {
+    //     arr.push(getRandom())
+    // }
+    // arr.sort((a,b) => b-a)
+    // console.log(arr)
+    const str = 'http://taobao.com/item?a=1&b=2&c=3&d=xxx&e'
+    const arr = str.substr(str.indexOf('?') + 1).split('&')
+    const obj = {}
+    // obj.a = 'aaa'
+    // obj['b'] = 'bbb'
+    arr.forEach(item => {
+        const arrn = item.split('=')
+        obj[arrn[0]] = arrn[1]
+        // obj.arr[0] = arrn[1]
+    })
+    console.log(obj)
+    
+    
+</script>

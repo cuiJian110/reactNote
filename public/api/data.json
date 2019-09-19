@@ -1,0 +1,8 @@
+{
+    "data": [
+        {"id": 1, "name": "储值卡","price": 200, "num": 2, "isChecked": false},
+        {"id": 2, "name": "增值卡","price": 100, "num": 2, "isChecked": true},
+        {"id": 3, "name": "记账卡","price": 220, "num": 2, "isChecked": false},
+        {"id": 4, "name": "信用卡","price": 120, "num": 2, "isChecked": false}
+    ]
+}
