@@ -5,12 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .header {
+            width: 100%;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+        }
+        li {
+            padding: 5px 20px;
+            margin-right: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        li:hover {
+            background-color: pink;
+        }
+        li:active {
+            background-color: red;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="header">
+        <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+    </div>
 </body>
 </html>
 <script>
+    function User() {
+        this.num = 90
+        this.age = 20
+    }
+    const user1 = new User()
+    console.log(user1.num)
+</script>
+<!-- <script>
     // function getRandom() {
     //     return Math.floor(Math.random()*90 + 10)
     // }
@@ -20,17 +67,17 @@
     // }
     // arr.sort((a,b) => b-a)
     // console.log(arr)
-    const str = 'http://taobao.com/item?a=1&b=2&c=3&d=xxx&e'
-    const arr = str.substr(str.indexOf('?') + 1).split('&')
-    const obj = {}
+    // const str = 'http://taobao.com/item?a=1&b=2&c=3&d=xxx&e'
+    // const arr = str.substr(str.indexOf('?') + 1).split('&')
+    // const obj = {}
     // obj.a = 'aaa'
     // obj['b'] = 'bbb'
-    arr.forEach(item => {
-        const arrn = item.split('=')
-        obj[arrn[0]] = arrn[1]
+    // arr.forEach(item => {
+    //     const arrn = item.split('=')
+    //     obj[arrn[0]] = arrn[1]
         // obj.arr[0] = arrn[1]
-    })
-    console.log(obj)
+    // })
+    // console.log(obj)
     
     
-</script>
+</script> -->

@@ -1,0 +1,9 @@
+批量部署-提交: http://www.saltapi.com:9000/saltshaker/api/v1.0/execute/sls?product_id=p-08c5a88e933111e984f752540094139a
+ 入参: {"minion_id":["192.168.224.132","192.168.177.143"],"sls":"linux/rsyslog-file","script_type":"public"}
+    执行SLS：批量部署
+    {"minion_id":["192.168.224.132","192.168.177.143"],"sls":"linux/rsyslog-file","script_type":"public"}
+    新加入参:
+        "sls" 传入显示时的 path.
+        code=31
+        
+        "script_type":1."public" 时 plat=linux/windows  2."private" 时可以不传plat入参.
