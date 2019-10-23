@@ -31,9 +31,16 @@
 // import {Provider} from 'react-redux'
 // ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
 
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import Home from './9.26test/page/home'
+// import {Provider} from 'react-redux'
+// import store from './9.26test/store'
+// ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
+
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './9.26test/page/home'
+import Home from './10.23test/page/home'
 import {Provider} from 'react-redux'
-import store from './9.26test/store'
+import store from './10.23test/store'
 ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
