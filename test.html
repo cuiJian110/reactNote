@@ -50,6 +50,53 @@
 </body>
 </html>
 <script>
+    // const arr = ['a','b','c','b','c','d','e','e']
+    // const arr1 = arr.reduce((p,i) => {
+    //     if(!p.includes(i)) {
+    //         p.push(i)
+    //     }
+    //     return p
+    // },[])
+    // const arr1 = [...new Set(arr)]
+    // console.log(arr)
+    // console.log(arr1)
+    const list = [
+        {id: 1, name: 'pingguo1', num: 5, price: 101, isChecked: false},
+        {id: 1, name: 'pingguo2', num: 6, price: 102, isChecked: true},
+        {id: 3, name: 'pingguo3', num: 7, price: 103, isChecked: false},
+        {id: 4, name: 'pingguo4', num: 8, price: 104, isChecked: false},
+    ]
+    const arr = list.reduce((p,i) => {
+        if(p.findIndex(item => item.id === i.id) === -1) {
+            p.push(i)
+        }
+        return p
+    },[])
+    console.log(arr)
+    // const arr = list.reduce((p,i) => [...p, i.id], [])
+    // console.log(list)
+    // console.log(arr)
+    // const arr1 = list.reduce((p,i) => {
+    //     if(i.num >= 6) {
+    //         p.push(i.name)
+    //     }
+    //     return p
+    // },[])
+    // // const arr1 = list.filter(i => i.num >= 7).reduce((p,i) => [...p, i.name], [])
+    // console.log(arr1)
+    // const arr = [{ id: 0 }, { id: 1 }, { id: 0 }]
+    // arr.forEach(item => {
+    //     if(item.id === 0) {
+    //         item.id = 2
+    //     }
+    // })
+    // const arrn = arr.map(item => {
+    //     if(item.id === 0) {
+    //         item.id = 2
+    //     }
+    //     return item
+    // })
+    // console.log(arrn)
     // const oo = 'jj'
     
     // try {

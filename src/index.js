@@ -38,9 +38,23 @@
 // import store from './9.26test/store'
 // ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
 
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import Home from './10.23test/page/home'
+// import {Provider} from 'react-redux'
+// import store from './10.23test/store'
+// ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
+
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import Home from './10.24test/page/home'
+// import {Provider} from 'react-redux'
+// import store from './10.24test/store'
+// ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
+
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './10.23test/page/home'
+import Home from './10.25test/page/home'
 import {Provider} from 'react-redux'
-import store from './10.23test/store'
+import store from './10.25test/store'
 ReactDOM.render(<Provider store={store}><Home /></Provider>, document.querySelector('#root'))
